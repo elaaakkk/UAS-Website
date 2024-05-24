@@ -7,7 +7,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Diastema bold';
 }
 
 .wrapper {
@@ -20,8 +20,8 @@ body {
     font-size: 50px;
     font-weight: 800;
     float: left;
-    font-family: courier;
-    color: #364f6b;
+    font-family: 'Diastema bold';
+    color: white;
 }
 
 .menu {
@@ -36,7 +36,7 @@ nav {
     position: sticky;
     position: -webkit-sticky; 
     top: 0;
-    background: #FFFFFF;
+    background: #DD6031;
     z-index: 1;
     border-bottom:1px solid #364f6b;
 }
@@ -53,7 +53,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color: white;
     font-weight: bold;
     text-align: center;
     padding: 0px 16px 0px 16px;
@@ -78,12 +78,12 @@ section {
 .kolom .deskripsi {
     font-size: 20px;
     font-weight: bold;
-    font-family: 'comic sans ms';
+    font-family: 'poppins';
     color: #364f6b;
 }
 
 h2 {
-    font-family: 'comic sans ms';
+    font-family: 'Diastema Bold';
     font-weight: 800;
     font-size: 45px;
     margin-bottom: 20px;
@@ -93,11 +93,11 @@ h2 {
 }
 
 a.tbl-biru {
-    background: #3f72af;
+    background: #ff9b57;
     border-radius: 20px;
     margin-top: 20px;
     padding: 15px 20px 15px 20px;
-    color: #FFFFFF;
+    color: black;
     cursor: pointer;
     font-weight: bold;
 }
@@ -132,52 +132,31 @@ p {
     width: 100%;
 }
 
-.tutor-list {
+.course-list {
     width: 100%;
     position: relative;
     display: flex;
     flex-wrap: wrap;
 }
 
-.kartu-tutor {
+.kartu-course {
     width: 20%;
     margin: 0 auto;
 }
 
-.kartu-tutor img {
+.kartu-course img {
     width: 80%;
     border-radius: 50%;
 }
 
-.kartu-tutor p {
-    font-family: 'comic sans ms';
+.kartu-course p {
+    font-family: 'Diastema bold';
     font-weight: 800;
     font-size: 25px;
     text-align: center;
     color: #364f6b;
 }
 
-.partner-list {
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.kartu-partner {
-    width: 20%;
-    margin: 0 auto;
-}
-
-.kartu-partner img {
-    width: 150px;
-    border-radius: 50%;
-}
-
-#contact {
-    background: #dedede;
-    padding:50px 0px 50px 0px;
-}
 
 .footer {
     width: 100%;
@@ -193,11 +172,11 @@ p {
 }
 
 h3 {
-    font-family: 'comic sans ms';
+    font-family: 'Diastema bold';
     font-weight: 800;
     font-size: 30px;
     margin-bottom: 20px;
-    color: #364f6b;
+    color: white;
     width: 100%;
     line-height: 50px;
 }
@@ -246,11 +225,42 @@ h3 {
         height: auto;
     }
 
-    .kartu-tutor {
+    .kartu-corse {
         width: 50%;
     }
 
-    .kartu-partner {
-        width: 50%;
+    .tombol-menu {
+        position: absolute;
+        top: 1.7rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+    }
+
+    .tombol-menu .garis {
+        height: 3px;
+        background-color: #3f72af;
+    }
+    
+    @media screen and (max-width: 991.98px) {
+        .logo a {
+            display: inline;
+        }
+        .tombol-menu {
+            display: flex;
+        }
+        nav .menu {
+            display: none;
+        }
+        nav .menu.active {
+            display: flex;
+        }
+        nav ul li {
+            width:100%;
+            border-bottom:1px solid #333333;
+        }
     }
 }
